@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Mapbox Directions</title>
+	<!-- CORE MAPBOX JS AND CSS -->
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+	<!-- MAPBOX DIRECTIONS JS AND CSS FROM https://github.com/mapbox/mapbox-gl-directions -->
+	<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+	<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
+
+	<style type="text/css">
+		#map {
+			height: 100vh; /* 100 view height */
+			width: 100vw; /* 100 view width */
+		}
+
+		body {
+			margin: 0px; /* remove spaces for map to get whole view */
+		}
+	</style>
+</head>
+<body>
+	<!-- the map itself -->
+	<div id='map'></div>
+
+	<script src="js/maps.js"></script>
+</body>
+</html>
